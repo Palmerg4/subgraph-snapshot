@@ -3,12 +3,12 @@ schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum
-    name: Darwinia
+    name: MantraDAO
     network: mainnet
     source:
-      address: "0x9469d013805bffb7d3debe5e7839237e535ec483"
-      abi: Darwinia
-      startBlock: 6263557
+      address: "0x3593d125a4f7849a1b059e64f4517a86dd60c95d"
+      abi: MantraDAO
+      startBlock: 11470888
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -16,8 +16,8 @@ dataSources:
       entities:
         - Transfer
       abis:
-        - name: Darwinia
-          file: ./abis/Darwinia.json
+        - name: MantraDAO
+          file: ./abis/MantraDAO.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer

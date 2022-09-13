@@ -1,6 +1,14 @@
-type ExampleEntity @entity {
+type Holder @entity {
   id: ID!
-  count: BigInt!
-  owner: Bytes! # address
-  spender: Bytes! # address
+  amount: BigInt!
+  address: Bytes!
+  createdAtTimestamp: BigInt!
+  createdAtBlockNumber: BigInt!
+}
+
+type TransferEvent @entity {
+  id: ID!
+  amount: BigInt!
+  to: Bytes!
+  from: Bytes!
 }

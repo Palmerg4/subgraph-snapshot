@@ -3,12 +3,12 @@ schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum
-    name: Darwinia
+    name: ANKR
     network: mainnet
     source:
-      address: "0x9469d013805bffb7d3debe5e7839237e535ec483"
-      abi: Darwinia
-      startBlock: 6263557
+      address: "0x8290333ceF9e6D528dD5618Fb97a76f268f3EDD4"
+      abi: ANKR
+      startBlock: 7246755
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.6
@@ -16,8 +16,8 @@ dataSources:
       entities:
         - Transfer
       abis:
-        - name: Darwinia
-          file: ./abis/Darwinia.json
+        - name: ANKR
+          file: ./abis/ANKR.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
