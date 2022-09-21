@@ -38,6 +38,7 @@ let i = 0;
 let lastTimestamp = 0;
 let userData;
 let e = false;
+let finalBalances = [];
 
 function queryLoop() {
   setTimeout(() => {
@@ -72,9 +73,11 @@ function queryLoop() {
         query: gql(tokensQuery)
       })
       .then((data) => userData = data.data.holders)
-      .then(() => appendFileSync('balances.json', JSON.stringify(userData, null, 2)))
+      .then(() => finalBalances = finalBalances.concat(userData))
+      //.then(() => appendFileSync('balances.json', JSON.stringify(userData, null, 2)))
       .then(() => lastTimestamp = userData[999].createdAtTimestamp)
       .catch(() => {
+          appendFileSync('balances.json', JSON.stringify(finalBalances, null, 2))
           console.log('Snapshot Completed!')
           e = true;
       })
