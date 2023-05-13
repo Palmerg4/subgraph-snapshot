@@ -6,13 +6,13 @@ Employing The Graph allows users to create a subgraph that is consistently index
 
 By leveraging GraphQL, these queries can be quite small and return only the data you need.
 
-#Installation
+# Installation
 
 ```shell
 npm install
 ```
 
-#Usage
+# Usage
 
 Create a subgrpah using Subgraph Studio using one of the sample ERC20 subgraphs, or create your own schema accordingly 
 
