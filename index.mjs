@@ -14,15 +14,7 @@ import { appendFileSync } from 'node:fs';
 //
 
 const httpLink = new HttpLink({
-  uri: 'https://api.studio.thegraph.com/query/34276/bondly/v0.1' // BONDLY
-  //uri: 'https://api.studio.thegraph.com/query/34276/crust/v0.1' // CRUST
-  //uri: 'https://api.studio.thegraph.com/query/34276/darwinia/v0.1' // DARWINIA
-  //uri: 'https://api.studio.thegraph.com/query/34276/kylin/v0.1' // KYLIN
-  //uri: 'https://api.studio.thegraph.com/query/34276/bounce/v0.1' // BOUNCE
-  //uri: 'https://api.studio.thegraph.com/query/34276/mantradao/v0.1' // MantraDAO
-  //uri: 'https://api.studio.thegraph.com/query/34276/phala/v0.1' // PHALA
-  //uri: 'https://api.studio.thegraph.com/query/34276/ankr/v0.1' // ANKR
-  //uri: 'https://api.studio.thegraph.com/query/34276/usdc/v0.1' // USDC
+  //uri: 'Replace With Your Subgraph Endpoint - Can Use Subgraph Studio Endpoint'
 });
 
 const client = new ApolloClient({
@@ -90,4 +82,3 @@ function queryLoop() {
 }
 
 queryLoop();
-
