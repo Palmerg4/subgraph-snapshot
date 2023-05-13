@@ -20,6 +20,8 @@ Wait for indexing - the time this takes depends on total entities and the number
 
 Replace the uri comment with the uri of the studio subgraph you just created
 
+# Run
+
 ```shell
 node index.mjs
 ```
