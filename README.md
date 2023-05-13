@@ -28,4 +28,4 @@ node index.mjs
 
 If the JSON is all you need, that's all. You can also convert the JSON output to CSV format if needed by modifying the script, or by utilizing online tools.
 
-If you'd like to contribute send a PR 👍
+If you'd like to contribute please send a PR 👍
